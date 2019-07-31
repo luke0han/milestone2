@@ -2,8 +2,81 @@
 <html>
 
 <head>
+
+    <meta charset="UTF-8">
+    <title>Luke's Memory Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <audio id="audio1">
+  	<source src="audio/audio1.mp3"></source>
+  </audio>
+  <audio id="audio2">
+  	<source src="audio/audio2.mp3"></source>
+  </audio>
+  
+
 </head>
 
 <body>
+
+    <div class="container-fluid" id="name-rules">
+        <div class="row">
+            <div class="col">
+                <h1>MEMORY GAME</h1>
+            </div>
+        </div>
+        <div>
+            <p>Turn on, press the start button and try to follow the pattern!</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <div id="counter"></div>
+        </div>
+    </div>
+
+    <div class="container" id="game">
+
+        <div class="row box">
+
+            <div class="col-12">
+
+                <div class="col-xs-3" id="c">C</div>
+                <div class="col-xs-3" id="o">O</div>
+                <div class="col-xs-3" id="d">D</div>
+                <div class="col-xs-3" id="e">E</div>
+            </div>
+            <div>
+                <h3>Institute</h3>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+
+            <div id="power">
+                <button class="button" id="start">Start</button>
+            </div>
+             <div id="power">
+                 <br>
+                <input type="checkbox" class="toggle" id="on">
+                <h4>Power</h4>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="js/game.js"></script>
+
 </body>
+
 </html>
